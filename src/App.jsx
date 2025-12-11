@@ -2,6 +2,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -11,6 +12,8 @@ import Products from "./pages/Product";
 import Services from "./pages/Services";
 import WhatsNew from "./pages/Whats";
 import Contact from "./pages/Contactus";
+import PrivacyPolicy from "./pages/privacy";
+import TermsOfService from "./pages/terms";
 
 const Layout = ({ children }) => (
   <>
@@ -29,6 +32,9 @@ function App() {
       <Route path="/services" element={<Layout><Services /></Layout>} />
       <Route path="/whats-new" element={<Layout><WhatsNew /></Layout>} />
       <Route path="/contact" element={<Layout><Contact /></Layout>} />
+      <Route path="/privacy" element={<Layout><PrivacyPolicy /></Layout>} />
+            <Route path="/terms" element={<Layout><TermsOfService /></Layout>} />
+
     </Routes>
   );
 }
