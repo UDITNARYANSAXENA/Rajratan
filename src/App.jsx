@@ -33,7 +33,7 @@ function App() {
       <Route path="/whats-new" element={<Layout><WhatsNew /></Layout>} />
       <Route path="/contact" element={<Layout><Contact /></Layout>} />
       <Route path="/privacy" element={<Layout><PrivacyPolicy /></Layout>} />
-            <Route path="/terms" element={<Layout><TermsOfService /></Layout>} />
+      <Route path="/terms" element={<Layout><TermsOfService /></Layout>} />
 
     </Routes>
   );
